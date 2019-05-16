@@ -76,6 +76,7 @@ class IndexView(ListView):
             'last':last,
         }
         return data
+
 '''
 def index(request):
     post_list = Post.objects.all().order_by('-created_time')
@@ -121,6 +122,9 @@ class PostDetailView(DetailView):
         comment_list = self.object.comment_set.all()
         context.update({'form':form, 'comment_list':comment_list})
         return context
+
+                    
+
 
 class CategoryView(IndexView):
     def get_queryset(self):

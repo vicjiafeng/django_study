@@ -3,6 +3,8 @@ from . import views
 from django.contrib import admin
 from blog.feeds import AllPostsRssFeed
 
+
+
 app_name = 'blog'
 urlpatterns = [
                #url(r'^$', views.index, name='index'),
@@ -12,4 +14,6 @@ urlpatterns = [
     url(r'^category/(?P<pk>[0-9]+)/$', views.CategoryView.as_view(), name='category'),
     url(r'^tag/(?P<pk>[0-9]+)/$', views.TagView.as_view(), name='tag'),
     url(r'^all/rss/$', AllPostsRssFeed(), name='rss'),
+               #url(r'^profile/(?P<path>.*)/$', views.profile, name='image'),
 ]
+

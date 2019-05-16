@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<html>
+  <head>
+      <title>图片上传</title>
+  </head>
+  <body>
+      <form action="/upload/" method="post" enctype="multipart/form-data" >
+          {% csrf_token %}
+          <input type="files" name="picture">
+          <input type="submit" name="上传">
+      </form>
+      
+  </body>
+</html>
+
+
+{% endblock main %}
