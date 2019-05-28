@@ -1,6 +1,7 @@
 # django_study
 ___
-!()[https://img.shields.io/badge/seld_edited-vic-brightgreen.svg]
+
+![](https://img.shields.io/badge/seld_edited-vic-brightgreen.svg)
 
 ### Application
 
